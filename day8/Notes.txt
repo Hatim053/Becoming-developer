@@ -1,0 +1,43 @@
+                                                       String 
+let name = "Hello";
+let city = new String("Bhopal"); - declaring through constructor functions                                                                                                   
+Commonly Used Functions : trim() , .charAt() ,  indexOf() , slice() , endsWith() , startsWidth() , .length , concat() , replace() , replaceAll() , includes() , toLowerCase() , toUpperCase() , toString() - [to convert value's into string] , .splits() , subtring();
+
+String Literals - use backtics instead of "" to define a string , can insert varibles directly into template literals termed as string interpolation
+ 
+                                               
+                                               
+                                                Maths Library Functions
+.random() - generate's random value between 0-1
+.round() - round off the value 
+.floor() - round off to lower value
+.ciel() - round off to upper value
+.abs() -  give's absolute value
+.min() - compare and give mininum value
+.max() - compare and give maximum value
+.PI() - give's PI value(3.14)
+.pow() - to calculate power
+
+Calculating Random value in sepecific range :  
+const min = 10;
+cont max = 20;
+Math.foor((Math.random() * (max-min)+1) + min);
+
+                                                        Numbers
+.MAX_VALUE
+.MIN_VALUE 
+
+toFixed() - to get decimal point zeros after Number
+
+                                                      Date And Time
+dates.now() - gives time in miliseconds
+let date = new Dates();
+type of date will be object
+there are various functions to modify the date output
+Can Modify The date Format and can declare custom Date
+Months Are Considered / Based on 0-Based Indexing 
+Topics Convered
+1) String  ✅
+2) Maths And Numbers ✅
+3) Math library functions ✅
+4) Git And Hub More ✅

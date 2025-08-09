@@ -1,0 +1,7 @@
+1) We can Run JavaScript outside the browser with nodejs and deno - written by ryan dahl
+2) data types - var , let and const
+3) "useStrict" - it treat all hs coe as newer version
+4) alert(3+3) - if using in the browser or using it with attached html file outside browser then only it will work when using indepently with node it won't work
+5) official documentation - mdn , tc39.es
+
+

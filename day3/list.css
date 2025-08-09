@@ -1,0 +1,11 @@
+ol {
+    /* list-style-type: "✅"; */
+    list-style-position: outside;
+    /* list-style: none; */
+    list-style: devanagari;
+    /* list-style-image: url(1000033647.jpg); */
+}
+li {
+color: red;
+background-color: yellow;
+}

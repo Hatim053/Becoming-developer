@@ -1,0 +1,38 @@
+Primitve And Non Primitve Data Types
+data types are primarly classified into two types primitve and non primitve these classification is based on how they are treated in the memory
+
+
+Stack memory
+1) use for static memory allocation  in simple words it is used for storing data types with fixed sizes
+2) primarly used for storing primitive data types
+3) here we get the copy of value 
+4) changes are made to copy value 
+ex: let a = 10;
+    let b = a;
+    b = 20; 
+    so here changes are only made to b a is same as 10 and b became 20
+
+Heap memory 
+1) use for dynamic memory allocation in simple words it is used for storing data types with varibale size whose size's can be changed
+2) primarly used for storing non primitive data types
+3) here we get the memory address / refrence of the value stored in heap memeory
+4) changes are made to the orignal value
+ex : let arr = [1,2,3];
+     let arr1 = arr; // arr1 got the refrence of arr memeory address
+     arr.pop();
+     arr1.push(3);
+     both arr and arr1 will give output [1,2,3];
+     but if we do arr = [4,5,6] // here we are not changin / modifying but instead we are re defining arr so it will be allocated different memeory address so from here arr and arr1 are containing different mememory address / refrence so changes will also be made differently to both the values
+                                                   Garbage Collector
+Garbage Collectors : when a value is not target by any of varibale then Garbagecollector remove's it from the memory space
+
+                                                 String To Number Conversion
+1)it always start's from left side 
+2) when we try to use + operators with string and number it get's concatinatedfv
+
+Topics Covered 
+1) Operators ✅
+2) String to Number Conversion ✅
+3) stack and Heap Memeory ✅
+
+4) Git And GitHub

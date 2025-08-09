@@ -1,0 +1,42 @@
+font - rem me dena
+font ka global varibale banalo
+colors ka global varibale bana lo
+main container - set karo (overflow hidden width)
+universally margin padding 0 karo
+
+
+1 , 2 , 5 cards layout grid 
+3 , 4  , 6 layout flexbox
+.fx{
+display: flex;
+justify-content: center;
+align-items: center;
+}
+.flexCol{
+display: flex;
+flex-direction: column;
+align-items: center;
+}
+.flexRow {
+    display: flex;
+    justify-content: center;
+}
+.flexAlign{
+    display: flex;
+    align-items: center;
+}
+.flexAround{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.flexBetween{
+    display: flex;
+    justify-content: space-between;
+}
+.displayGrid{
+    display: grid;
+}
+
+
+medai queries - 768

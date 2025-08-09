@@ -1,0 +1,28 @@
+Topics Covered Today :
+what is internet
+what is www
+http vs https
+what is dns
+meta data
+attributes
+text formatting tags in html
+list and it's type , nested list
+html table
+html forms
+multimedia tags
+inline and block level elements
+id and classes 
+links attachment , image attachment
+core web vitals
+semantic tags 
+html entities
+
+to be covered :
+
+after 8:30 video of html one shot
+9:30
+ 
+2practice 
+1 linkedin Post
+
+

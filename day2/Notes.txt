@@ -1,0 +1,26 @@
+Topic's Convered : 
+1) Css Selectors ✅
+2) Css Box Element ✅
+3) Css Fonts And Colors Properties ✅
+4) Specificiy Of Selectors In Css ✅
+5) Css Sizing Units ✅
+
+6) Display Properties ✅ 
+7) position and overflow Properties✅
+8) outline and shadow ✅
+
+
+
+element Selectors div{}
+class Selectors .{}
+id Selectors #{}
+pseudo Selectors :hover :visited :link :active
+universal Selectors *{}
+child Selectors firstchild last child nth child last nth child
+desecendant Selectors div > p{}
+
+font family , font size , font weight , font style
+text decoration underline , overline none
+text transform lowercase uppercase captiliaze
+
+color colorcode hexcode rbg rbga hsl hsla 
