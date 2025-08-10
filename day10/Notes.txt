@@ -1,0 +1,102 @@
+let obj = new Object() - creates a singleton object
+let obj = {} - declring an object using object literals
+                                               
+                    (A)  Nesting In Objects
+let obj = {
+    email : "abc@gmail.com",
+    name : {
+    username : "abc",
+    fullname : {
+        firstName : "ab",
+        lastName : "c"
+    }
+    },
+    isLoggedIn : true
+}
+// accessing value
+console.log(obj.name) - gives an object
+console.log(obj.name.fullName.firtName) - "ab"
+                       (B)  Optional Chaining
+
+
+  usecase : when it's not guranteed whether the accessing property exist or not , it short circuits the expression and returns undefined (can be used instead of if-else statement)
+                      (C)  Merging Objects
+let obj1 = {
+    1:"a",
+    2:"b"
+}
+let obj2 = {
+    2:"a",
+    3:"b"
+} 
+                      (i) Using Object.assgin()
+
+let obj3 = Object.assign({} , obj1 , obj2); obj3 will be containing the result and obj1 and obj2 will remain same
+let obj4 = Object.assign(obj1 , obj2); - manipulation will be inside obj1 
+
+.assign() - the first arguments inside this function means target and all others arguments are consider as soruce
+so technically changes are made to the target.
+if don't want to manipulate orignal objects then use empty {} as first argument when calling assign function {} will be target now
+
+                (ii)  Using Spread operator
+let obj3 = {...obj1 , ...obj2} also gives same output as assign().
+
+obj1.hasOwnProperty('isLoggedIn') - to check whether object contains the property or not (checks only direct property not nested)
+                                              
+                    (D)  Destructuring
+let obj1 = {
+    course : "Machine Learning",
+    courseInstructor : "Hello World"
+}                                                  
+let {courseInstructor} = obj1; - now this this key can be directly used
+console.log(courseInstructor); - // output - hello world
+let {courseInstructor : instructor} = obj1 - can assign new name
+console.log(instructor) - // output - hello world
+
+                     (E) functions
+function addNumbers(num1 , num2) {
+    return num1 + num2;
+} 
+// Arrow function - let x = (num1 , num2) => {
+    return num1 + num2;
+}             
+
+function welcomeUser(username) {
+console.log(`${username} Just LoggedIn`);
+}//here if the argument is not passed then username will be undefined
+ 
+                    (F)   Default parameters
+function welcomeUser(username = "Hello") {
+    console.log(`${username} Just LoggedIn`); 
+} if argument is not passed default value will be taken else passed value will be considered
+
+                      (G)     Rest Operator
+
+ function addNumbers(...num) { // it handles if multiple value's are passed 
+    return num; // it will return an array 
+ }
+ function addNumbers(val1 , val2 , ...num) - here first two arguments will be consider as val1 and val2 rest all the value's will be inside in num
+ 
+Function parameters can be variables , objects , arrays.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Topics Covered : 
+1) Nesting In Objects  , singleton , non singleton And Optional Chaining ✅
+2) Destructuring In Objects ✅
+3) functions (function with objects , arrays , default paramters) ✅
+4) rest operator ✅
+
