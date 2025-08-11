@@ -1,11 +1,11 @@
-global and local scope
+// global and local scope
 var a = 10; // globally accessible
 if(true) {
     var  b = 10; // globally accesible
     let c = 5; // locally accessible
     console.log(a , b);
 }
-Hoisting
+// Hoisting
 console.log(d); // undefined - reference get's hoisting
 var  d = 10;
 console.log(sum(4,6)); // not hoisted beaucse trated as varibale
@@ -16,7 +16,7 @@ console.log(add(4,5)); // get's hoisted
 function add(num1 , num2) {
     return num1+num2;
 }
-closures 
+// closures 
 function user () {
     let username = "Hatim";
     function welcomeUser() {
@@ -35,7 +35,7 @@ let add = (num1 , num2) => num1 + num2;
 let obj = () => ({name : "Hatim"});
 console.log(add(5,6));
 console.log(obj());
-this keyword
+// this keyword
 const obj = {
     name : "Hatim",
     welcomeUser : () => {

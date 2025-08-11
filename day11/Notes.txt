@@ -28,8 +28,8 @@ of code {} , functions then that is
      function sum =  () => ({name : "Hatim"}); 
 
                           
-                         (D) this keyword
-
+        (D) this keyword
+        
 it refers to the current context.
 example : (i) when used inside any object then it refers to that object,
           (ii) when used globally in web browser refers to window object, in wbe browser window is considered as global object because this give the access to brower environment such Dom and window events 
