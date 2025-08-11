@@ -1,0 +1,68 @@
+(A) GLobal Scope Vs  Local Scope
+                   global Scope :
+(i) if we declare a varibale outside of
+ functions , block then that variable
+  lives in global Scope.
+(ii) they can be accessed inside any block of code.
+
+                   local scope :
+(i) when avaribale is defined any block
+of code {} , functions then that is
+ termed as local scoped 
+(ii) this can be accessed only within it's local scope.
+
+                 (B) Closures
+ when create a nested functions , child function can access and remember the varibales from it's outer scope (parent function).
+
+        (c) Declaration Of functions (different syntax's)
+(i) function sum(num1 , num2) {
+    return num1 + num2;
+} // this functions get hoisted mean this can accessed before it's Declaration.
+
+(ii) const add = function(num1 , num2) {
+    return num1 + num2;
+} // this function is treated as a varibale which can't be accessed before it's Declaration.
+
+(iii) let sum = (num1 , num2) => num1+ num2; // implicit return (used only with arrow function)
+                      or
+     function sum =  () => ({name : "Hatim"}); 
+
+                          
+                         (D) this keyword
+
+it refers to the current context.
+example : (i) when used inside any object then it refers to that object,
+          (ii) when used globally in web browser refers to window object, in wbe browser window is considered as global object because this give the access to brower environment such Dom and window events 
+          (iii) when used in node environment refer global object {}
+          (iv) where ever you use this keyword it will return or give access to the current context
+        
+                       (E) Arrow functions
+          let sum = () => {
+            // block of code
+          }      
+         Arrow function Vs Normal function
+         (i) Arrow Function : Arrow function refers to global object when this keyword is used inside them doesn't matter where they are called
+         (ii) Normal Function : refers to context where they are called ex : if they are called inside a object they will refer to that object , 
+         if they are called standalone they refer to global object
+
+         
+                    (F) Imediately Invoked Function expression (IIFE)
+
+         (i) they invoked or called just after declaration 
+        (ii) they don't follow hoisting
+        Why We Use : beacuse doesn't populate the global space / scope 
+        syntax : (function() {
+    console.log("Hello");
+    })(); // when using multiple iife simlulteneuosly then it is must to use ; or else will get an error
+    (function () {
+    console.log("world");
+    }) ();
+
+    Topic Covered : 
+    1) Global Vs Local Scope ✅
+    2) Hoisting ✅
+    3) Closures
+    4) Implicit and Explicit Return Type ✅
+    5) This keyword ✅
+    6) Arrow Function ✅
+    7) Imediately Invoked Function expression (IIFE) ✅
