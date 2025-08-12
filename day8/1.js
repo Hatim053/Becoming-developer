@@ -43,9 +43,3 @@ console.log(Math.random() , Math.round(4.4), Math.abs(5-10) , Math.min(2,3,4) , 
 const min = 10;
 const max = 20;
 console.log(Math.floor((Math.random() * (max-min+1)) + min));
-
-
-
-
-
-

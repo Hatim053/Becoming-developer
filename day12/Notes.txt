@@ -1,0 +1,28 @@
+                                             Code Execution In Js And Call stack
+(A) Type Of Execution Context : 
+    (1) Global Execution Context,
+    (2) Function Execution Context,
+    (3) Eval Execution Context
+                                               Comparsion
+                              GEC                          FEC                        EEC
+            Scope           global scope             function scope                  eval scope
+            lifetime        whole program             until function ends            til eval() runs
+            when created    At start of script        when function called           when eval () run
+                            before execution
+                             
+Note : Java Script is single threaded language.
+Steps :
+(1) before any code gets exected or script runs golbal execution context gets created.
+(2) next inside it , first phase is memory pahse where variable are assign memeory not value only memeory there values are set to undefined and functions are set with their defination.
+(3) now the next phase is execution phase here values are assign to the varibales and functions gets called or executed every time a function gets executed or call it again goes to memeory phase and execution phase beacuse in the memeory phase we only set the defination of the functions but now variables inside that function will go in the memeory phase and then they will go into execution phase this memeory and execution phase which is created on function call gets deleted as sson as function ends and function returns value to the global environment.
+
+(B) Call Stack  - where function calls are managed and handled.
+(1) At the bottom there is Global Execution Context.
+(2) Every time a function gets called new layers of stack get formed and all the varibales fo function are redecalred into that layers means      takes new space in memeory.
+(3) stack layers get's deleted after function execution.
+
+
+Topics Covered : 
+(1) Code Execution In Js ✅
+(2) Call Stack ✅
+(3) Operators ✅
