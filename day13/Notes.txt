@@ -1,0 +1,45 @@
+                                      (A) for Of Loop
+Syntax : for(const num of nums) {}
+
+const nums = [1,2,3,4]; it will return the value
+const myMap = new Map();  it will return an array containing key-value pair
+
+                                    (B) for In Loop
+syntax : for(const key in object) {}
+let const nums = [1,2,3,4,5]; it will return the index's
+const obj = {name : "Hello" , age : 21} it will return keys of the object
+                                    (C) for each Loop
+syntax : arr.forEach(() => {})
+(i) recieve's a callback function
+(ii) doesn't return any value
+(iii) contains 3 parameters - value , index , array
+                                    (D) filter
+(i) return the value's that pass the staisfy the given condition
+(ii) recieve a call back function
+const arr = nums.filter((num) => {
+return num > 4;
+}) // will return all the value greater than 4                                    
+                                   
+                                    (D) Map
+(i) tranform each value into whatever callback function does and returns arr of same length;
+(ii) recieves a call back function
+const arr = nums.map(() => {
+    nums*10;
+})
+                                    (D) Function Chaining
+  const arr = nums.map((num) => num*10).filter((num) => num>40); 
+  here every next function will get the update values from previous function not the orignal values.
+
+                                     (E) Reduce
+(i) recieves a call back function - parameters - accumaltor , current value
+(ii) returns the final value
+syntax - const total = nums.reduce((acc , currVal)=> {
+ return acc+currVal;
+} , 0)   - initailing accumaltor with 0;                                                                      
+
+
+
+Topic Covered : 
+(i) Loops , for , while , do-while , for of , for in , forEach ✅
+(ii) reduce , filter , map ✅
+(iii) function Chaining ✅
