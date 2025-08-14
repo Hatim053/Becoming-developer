@@ -1,0 +1,32 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                             () InnerText Vs textContent
+innerText - it return's all text inside element that is visible to us.
+textContent - it return's all the text inside element that is visible to us + return the text that is hidden.
+
+                                          () Html Collections and Node List
+Html Collections and Node List Are not purely arrays so as to convert them into array - Array.from(nodeList);
+
+
+const cont = document.querySelector(".container");
+cont.id - give's the id of the cont
+cont.className - give's the class of the cont
+can you use further querySelector also like : document.querySelector(".container").document.querySelector(".box");
+can you css like selectors also inside querySelector like 'p : firstChild';
+document.createTextNode("Hello")
+
+
+
+
+
