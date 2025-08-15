@@ -1,0 +1,48 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.container{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: antiquewhite;
+    justify-content: space-evenly;
+}
+.heading{
+    display: flex;
+    flex-direction: column;
+}
+header{
+    text-align: center;
+    height: 5vmax;
+    line-height: 5vmax;
+    background-color: cadetblue;
+}
+.game{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.game input{
+    width: 50vmin;
+    height: 10vmin;
+}
+#submitBtn{
+background-color: green;
+font-size: larger;
+color: wheat;
+}
+button{
+    background-color: cadetblue;
+    width: 30vmin;
+    height: 10vmin;
+    border-radius: 10px;
+}
+.previousGuesses{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
