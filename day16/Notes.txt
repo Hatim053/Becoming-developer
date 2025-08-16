@@ -1,0 +1,56 @@
+                            (A) Events In Js
+Event : it represent's the user interaction or we can say that any action that has happen within the web page.
+Type Of Event : click , double click , submit , keyword events , mouse events etc.
+
+                    (B) Ways To Listen an Event : 
+
+(i) myContainer.onclick = function() { // can be use but not recommended to use
+    console.log("Hello");
+}
+(ii) myContainer.addEventListener('click' , function() {
+    console.log("I Was Clicked");
+} , false); // recommended to use 
+it takes 3 parameters first is type of event that is 'click' event in this case , then second it takes a call back function and third parameter also 
+that is either true or false , if we don't define it by default it is considered as false.
+false : means events will get bubbled (first inner element will listen the event than it's outer elements will);
+true : means event capturing (first outer element will listen the event and than inner elements will);
+
+                    (C) Event Bubbling And Capturing
+According to the javascript , technically whenever we are clicking on particular element inside a container than we are also clicking that container in general so if container is also defined with an event than both the events will get triggered.
+
+                        (D) Event Functions
+    (i) eventObject.stopPropogation(); // stops the event bubbling.                                                
+    (ii) eventObject.preventDefault(); // prevents the default behaviour of the selected element.
+
+                       (E) EVent Object
+ whenever we listen an event then in the call back function there is parameter passed that is termed as event object this contains details about the event such as event type , event target etc.
+
+
+
+
+                (F) Aysnc JavaScript Fundamentls  
+
+JavaScript is by default  synchronous and single threaded.however javascript can be used Aysnchronously with the help of execution environments such as web browser , nodejs , deno js.
+Event Loop Decides The execution order of the code : 
+(i) if the task is Synchronous then it directly goes to the call stack.
+(ii) but if the task is Aysnchronous then it goes to callback queue and wait until the call stack gets clear then event loop transfer this tasks to call stack for execution.
+So Basically event loop execution order decide karta h.
+
+                            (G) Aysnc code
+setTimeout, fetch, promises, async/await , all these features are used to write a Aysnc code.
+
+              Synchronous                                  Aysnchronous
+every task wait's for the last                        Aysnc task's  are handled by web api / node api
+one to complete before execution.                     in the background and the execution of the further task doen't have
+execution is done by line by line.                    to wait for it.
+
+
+
+
+Topics Covered :
+1) Events In Js ✅
+2) Event Bubbling ✅
+3) Event Object ✅
+4) Ways To Listen An Event ✅
+5) Aync And Sync Js Fundamentls ✅
+6) set and clear Interval , TimeOut ✅
