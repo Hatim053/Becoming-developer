@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unlimited Colors</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+.header{
+    width: 100vw;
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: xx-large;
+    background-color: antiquewhite;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 90vh;
+    gap: 3vmax;
+}
+button{
+    width: 10vh;
+    height: 10vh;
+    font-size: larger;
+}
+
+    </style>
+</head>
+<body>
+<div class="header">
+    Unlimited Colors
+</div>
+<div class="container">
+    <button id="start">Start</button>
+    <button id="stop">Stop</button>
+</div>
+</body>
+<script>
+myContainer = document.querySelector('.container');
+startBtn = document.querySelector('#start');
+stopBtn = document.querySelector('#stop');
+
+let changeColor;
+startBtn.addEventListener('click' , function () {
+    changeColor = setInterval(() => {
+        let r = getRandomValue();
+        let g = getRandomValue();
+        let b = getRandomValue();
+        myContainer.style.backgroundColor = `rgb(${r} , ${g} , ${b})`;
+    }, 1000);
+} , false);
+
+stopBtn.addEventListener('click' , function() {
+    clearInterval(changeColor);
+} , false);
+function getRandomValue() {
+    const min = 1;
+    const max = 299;
+    const value = (Math.random()* (max-min+1)) + min;
+    return value;
+}
+</script>
+</html>

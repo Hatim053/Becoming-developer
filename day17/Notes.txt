@@ -1,0 +1,14 @@
+seTimeout and SetInterval can use predefined function as a callback function. we only have to pass the refrence of the function.
+
+let z = setInterval(printHello , 1000 , "Hatim");  setInterval can use 3 parameters third paramter is the paramter for refrenced / callback function because we can't directly pass the paramter to callback function because we are justing passing the refrence not invoking.
+
+// callback
+passing one function into another function as an argument.
+nesting of too many callback function can decrease the code readibility it is sometime also termed as callback hell or pyramid of doom.
+
+
+Topics Covered : 
+1) set seTimeout and set Interval ✅
+2) callback functions ✅
+
+
