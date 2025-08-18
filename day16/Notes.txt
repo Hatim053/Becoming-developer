@@ -30,10 +30,11 @@ According to the javascript , technically whenever we are clicking on particular
 
                 (F) Aysnc JavaScript Fundamentls  
 
-JavaScript is by default  synchronous and single threaded.however javascript can be used Aysnchronously with the help of execution environments such as web browser , nodejs , deno js.
+JavaScript is by default  synchronous and single threaded. but we can use javascript Aysnchronously by using some features like callback , fetch , promises and aync await. these are not directly handled by js , they are handled by the execution environment like web browser / node.
 Event Loop Decides The execution order of the code : 
 (i) if the task is Synchronous then it directly goes to the call stack.
 (ii) but if the task is Aysnchronous then it goes to callback queue and wait until the call stack gets clear then event loop transfer this tasks to call stack for execution.
+(iii) Even if the aync task get's finished early js still exectute the sync code first.
 So Basically event loop execution order decide karta h.
 
                             (G) Aysnc code

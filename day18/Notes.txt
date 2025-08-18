@@ -1,0 +1,35 @@
+                                    (A) Api
+Api : API is a like a messenger between two software systems that tranfers data from one side to another. it let us reuse the functionalities instead of implementing / creating it at our own.
+                                  (B) XMLHttpRequest
+It's an old way to make http request / call API's it before fetch() api , axios etc.                           
+1)
+// Create a new XHR object
+let xhr = new XMLHttpRequest();  
+
+2)
+// configuring / defining the request (method , url , Aysnc/Sync)
+xhr.open("GET", "https://jsonplaceholder.typicode.com/users/1", true); true means Aysnc request , false means Sync request
+
+3)
+// Send the request
+xhr.send();
+
+4) // Listen for response 
+xhr.onreadystatechange = function() { // it track progress every time status change
+  if (xhr.readyState === 4 && xhr.status === 200) {
+    let data = JSON.parse(xhr.responseText);
+    console.log("Name:", data.name);
+    console.log("Email:", data.email);
+  }
+};
+
+0 → Request not initialized (you just created xhr).
+1 → Request has been set up (xhr.open() called).
+2 → Request sent (xhr.send() called), headers received.
+3 → Request in progress, loading data.
+4 → Request finished, response is ready
+
+
+Topic Covered : 
+1) Api
+2) XMLHttpRequest 
