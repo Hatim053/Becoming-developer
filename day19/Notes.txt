@@ -1,0 +1,54 @@
+                               (A) Using fetch 
+fetch return promise:
+
+fetch('https://randomuser.me/api/')
+.then(function(data) {
+    return data.json();
+}).then(function(data) {
+     console.log(typeof data);
+ }).catch(function(error) {
+     console.log(error);
+ })
+
+
+Aync Await : 
+await is always used inside aync function.
+async function callApi() {
+    let response = await fetch('https://randomuser.me/api/');
+    let data  = await response.json();
+    return data; 
+}
+let data = await callApi(); // because yaha promise return ho rha h so we have to use await as it's an aync task so if we try to access it directly it shows promise pending
+console.log(data);
+
+
+promise : it's a promise for code execution . either code gets executed or fails in both the cases user will be notified.
+
+Stages Of Promise :
+1) Pending : initial stage of the promise (when it is working).
+2) settled : it either gets fulfilled or get rejected.
+if fulfilled then .then() return resolved value or else .catch runs with error.
+
+Syntax : 
+const promiseOne = new Promise((resolve , reject) => {
+fetch('https://randomuser.me/api/')
+.then((response) => {
+    let data = response.json();
+    return data;
+})
+.then((data) => {
+    if(data.results[0].gender == 'male') {
+        resolve(data.results[0]);
+    } else {
+        reject("Gender Not Matched"); // impllicit reject even  after promise is fullfilled on bases of fetched data 
+    }
+})
+.catch((error) => {
+    reject(error);// here promise will be rejected only if there network or server side error
+})
+});
+promiseOne.then((data) => {
+    console.log(data);
+}).catch((error) => {
+    console.log(error);
+})
