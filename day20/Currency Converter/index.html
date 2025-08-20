@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currency Converter</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="converter">
+            <header>Currency Converter</header>
+            <form action="">
+                <div>
+                    <label for="from">From
+                        <select name="" id="from" class="fromCurr">
+                            
+                        </select>
+                        <img id="fromFlag" src="https://flagcdn.com/w40/ae.png" alt="">
+                    </label>
+                    <img src="imageFile/transfer.png " alt="">
+                    <label for="to">to
+                             <select name="" id="to" class="toCurr">
+                            
+                        </select>
+                        <img id="toFlag" src="https://flagcdn.com/w40/ae.png" alt="">
+                    </label>
+                </div>
+                <label for="amount">Amount
+                    <input type="number" name="" id="amount" class="conversionAmount">
+                </label>
+                <input type="submit"  value="Convert" id="submitBtn">
+            </form>
+            <div class="result">
+                <span class="currentRate"></span>
+                <span id="conversion"></span>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

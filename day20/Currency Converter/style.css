@@ -1,0 +1,64 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.container{
+    width: 100vw;
+    height: 100vh;
+    background-color: cadetblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.converter{
+    width: 60vmin;
+    height: 60vmin;
+    background-color: khaki;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 7vmin;
+}
+header{
+    font-size: xx-large;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5vmin;
+    width: 100%;
+}
+form div{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-around;
+}
+.input{
+    width: 60px;
+}   
+#amount{
+    width: 70%;
+}
+.submitBtn{
+font-size: larger;
+border-radius: 5px;
+padding: 5px;
+background-color: darkgrey;
+}
+form img{
+    width: 30px;
+    height: 30px;
+}
+form label{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+label img{
+    width: 20px;
+    height: 15px;
+}

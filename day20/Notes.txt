@@ -1,0 +1,4 @@
+fetch() : fetch only gets rejected when there is a network error encountered(or any permission issue). fetch doesn't reject on http errors like(error 404 etc). beacuase yaha par request gyi tabhi to pata chala 404. so it will considered resolved.
+
+task in fetch promise goes to micro task / priority queues.
+If the task in the macro task queue and in the micro task queue are to be executed in the same time then task in micro task queue will get executed first.

@@ -23,7 +23,7 @@ console.log(data);
 
 
 promise : it's a promise for code execution . either code gets executed or fails in both the cases user will be notified.
-
+promise is an object.
 Stages Of Promise :
 1) Pending : initial stage of the promise (when it is working).
 2) settled : it either gets fulfilled or get rejected.
