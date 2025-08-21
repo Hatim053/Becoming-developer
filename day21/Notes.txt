@@ -1,0 +1,34 @@
+                          (A)Constructor Function
+It's a special type of function that is used to create / initialize multiple objects with same properties and behaviour. it creates an empty object when used with new keyword.
+
+                            (B) new keyword          
+
+new Keyword : this is actually the keyword that makes Constructor function or classes to create new objects instead of running just like a normal function
+Example : 
+function user(username , age , isLoggedIn) {
+    this.username = username; // this refereing to the current context
+    this.age = age;
+    this.isLoggedIn = isLoggedIn;
+    return this; // explicitly returning or else it returns implicitly
+}                                             
+
+(i) with new keyword :  
+const user1 = new user("hello" , 21 , true); // this is basically creating new empty object to which "this" keyword is refering.
+
+(ii) without new keyword : 
+const user2 = user("hello" , 21 , true); // now here no object is created so by default this refers to window object in browser and global object in node 
+console.log(window.username); // here in the window object(when in browser) it sets the properties;
+console.log(user2.username); // undefined error
+
+                                               (c) instance of
+ it is used to check whether the given object is an instance or is created using the particular constructer function or class , it returns a boolean value       
+
+
+
+ Topics Covered : 
+ 1) constructer function ✅
+ 2) new Keywrod ✅
+ 3) instance of ✅
+ 4) this keyword ✅
+
+                                               
