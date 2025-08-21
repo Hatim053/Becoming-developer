@@ -161,7 +161,8 @@ const fromCurr = document.querySelector('.fromCurr');
 const toCurr = document.querySelector('.toCurr');
 const conversionAmount = document.querySelector('#amount');
 const submitBtn = document.querySelector('#submitBtn');
-
+const conversion = document.querySelector('#conversion');
+const currentRate = document.querySelector('#currentRate');
 
 for(const key in currencies) {
 const option1 = document.createElement('option');
@@ -191,16 +192,24 @@ toCurr.addEventListener('click' , (e) => {
 submitBtn.addEventListener('click' , (e) => {
     e.preventDefault();
     e.stopPropagation();
-    const amount = conversionAmount.value;
-    const from = fromCurr.value;
-    const to = toCurr.value;
-    const response = fetch(`https://cdn.jsdelivr.net/npm/@fawazahmed0/currency-api@latest/v1/currencies/${from}.json`)
-    .then((data) => {
-        let result = data.json();
-        return result;
+    const amount = Number(conversionAmount.value);
+    const from = fromCurr.options[fromCurr.selectedIndex].innerText;
+    const to = toCurr.options[toCurr.selectedIndex].innerText;
+    // fetching Currency Rate
+     fetch(`https://anyapi.io/api/v1/exchange/convert?base=${from}&to=${to}&amount=${amount}&apiKey=5gt93ql6vcoohh5prvmvughq2jdjdr3ugquroael1ii83rvfp3sooug`).then((response) => {
+       let data = response.json();
+        return data;
     }).then((data) => {
-        console.log(data)
+       conversion.innerText = `${amount} ${from} = ${data.conerted} ${to}`;
+       currentRate.innerText = `$ 1 {from} = ${data.rate} ${to}`;
     }).catch((error) => {
         console.log(error);
     })
+    
 })
+
+async function getconversion(baseCurrency) {
+    let response = await fetch(`https://cdn.jsdelivr.net/npm/@fawazahmed0/currency-api@latest/v1/currencies/inr.json`)
+    let data = response.json();
+    return data;
+}
