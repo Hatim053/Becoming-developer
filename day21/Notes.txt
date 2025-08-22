@@ -1,4 +1,4 @@
-                          (A)Constructor Function
+                            (A)Constructor Function
 It's a special type of function that is used to create / initialize multiple objects with same properties and behaviour. it creates an empty object when used with new keyword.
 
                             (B) new keyword          
