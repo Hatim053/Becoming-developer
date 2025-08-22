@@ -1,0 +1,10 @@
+ Prototype is a reference to parent object and every parent has reference to its own parent, so they will keep going till the null.
+ In JavaScript  everything takes reference from object that why JavaScript has a Prototyppal behaviour.
+
+
+
+ Prototyppal inheritance Methods/Ways :
+1)   --proto-- // old syntax
+2)  .setPrototypeOf // new syntax
+
+-
