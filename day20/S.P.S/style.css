@@ -1,0 +1,68 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+#container{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 5vmax;
+    gap: 10vmax;
+    background-color: azure;
+}
+#buttons button{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+#buttons{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    gap: 5vmax;
+}
+#stone , #scissors , #paper{
+    font-size: x-large;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#stone{
+background-color: cadetblue;
+    color: white;
+}
+#scissors{
+    background-color: blanchedalmond;
+    color: black;
+}
+#paper{
+    background-color: ghostwhite;
+}
+#scoreCard{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+}
+#scoreCard span{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#result{
+    width: 100%;
+    height: 5vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: large;
+}
+#resetBtn{
+    font-size: x-large;
+    border-radius: 5px;
+    padding: 5px;
+    background-color: red;
+}
