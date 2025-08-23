@@ -1,0 +1,22 @@
+                                                    (A) call()
+Call() - lets you run a function with a specific this value and arguments in simple words  it helps to you tranfer the context of one object into  another function
+
+function setUsername(username) {
+    this.username = username;
+}
+function createUser(username , age) {
+    setUsername(username); // in this case username won't set because we are not holding the reference
+    setUsername.call(this , username); // now we passed our own context into setUsername so this keyword in setUsername will refer to createUser
+    this.age = age;
+}
+const user1 = new createUser("Hatim" , 22);
+console.log(user1);
+
+                                                      (B)
+ static : this methods / functions are available to the class itself they can't be access by the instances of that class                                                     
+
+Topics Covered : 
+(1) call(); ✅
+(2) classes and constructor ✅
+(3) Inheritance ✅
+(4) static keyword ✅
