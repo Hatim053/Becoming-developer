@@ -1,0 +1,18 @@
+                                   (A) bind();
+Basically it helps us to parmanently attach the  context of any object to a particular function , no matters where and how many times it is called it will refer to that attached context.    
+                                  (B) How call() Is different
+ call() attaches the context for the particular function call. as the new object calls it will attach the context of that new object.                                                                                                   
+
+
+
+
+
+
+Getters and setters look like properties but behind the scene run as functions they don't need parentheses when used
+
+
+Topics Covered : 
+1) Bind() ✅
+2) how bind is different from call ✅
+3) Object - get and define properties ✅
+4) getter and setters ✅
