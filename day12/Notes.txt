@@ -18,11 +18,11 @@ Steps :
 
 (B) Call Stack  - where function calls are managed and handled.
 (1) At the bottom there is Global Execution Context.
-(2) Every time a function gets called new layers of stack get formed and all the varibales fo function are redecalred into that layers means      takes new space in memeory.
+(2) Every time a function gets called new layers of stack / functional execution context  get formed and all the varibales fo function are redecalred into that layers means  takes new space in memeory.
 (3) stack layers get's deleted after function execution.
 
 
 Topics Covered : 
-(1) Code Execution In Js ✅
+(1) Code Execution In Js ✅ 
 (2) Call Stack ✅
 (3) Operators ✅

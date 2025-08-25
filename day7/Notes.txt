@@ -29,10 +29,9 @@ Garbage Collectors : when a value is not target by any of varibale then Garbagec
                                                  String To Number Conversion
 1)it always start's from left side 
 2) when we try to use + operators with string and number it get's concatinatedfv
-
+3) use - , * , / will perform the normal mathametical operation
 Topics Covered 
 1) Operators ✅
 2) String to Number Conversion ✅
 3) stack and Heap Memeory ✅
-
-4) Git And GitHub
+4) Git And GitHub ✅
