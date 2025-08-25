@@ -1,0 +1,13 @@
+Lexical Scoping : whenever we create a inner function inside a function than inner function can access the variables from outer function.
+
+
+Closures : A closure is created when a function "remembers" the variables from its lexical scope, even after the outer function has finished execution whenever we return a function then not only the function get's return but the whole Lexical scope of that function get return
+
+Exmaple : function init(name) {
+function displayName() {
+    console.log(name);
+}
+return displayName;
+}
+const myFunc = init('Continental Gt 650'); // at this line outer function gets executed and it return's a inner function
+myFunc(); // now outer function returns inner function that we are using here and even after outer function get executed it will remember the varibale 'name' from lexical scope that is what closure is.

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Closure</title>
+</head>
+<body>
+    <button id="red">Red</button>
+    <button id="grey">Grey</button>
+</body>
+</html>
+<script>
+const redBtn = document.querySelector('#red');
+const greyBtn = document.querySelector('#grey');
+
+// use case example of closure
+redBtn.addEventListener('click' , changeColor('red'));
+greyBtn.addEventListener('click' , changeColor('grey'));
+function changeColor(color) {
+  function change() {
+      document.body.style.backgroundColor = color;
+  }
+  return change;
+}
+</script>
