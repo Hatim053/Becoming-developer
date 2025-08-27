@@ -1,0 +1,18 @@
+React is the core foundational library
+react-Dom is the implementation of it in the web
+react-native is the implementation of it in the mobile apps
+
+
+react library helps to build single page applications because here only a single html file is loaded once (index.html) and react helps us to
+dynamically render components inside that single hmtl HTML page.
+
+fragements :  it let us return multiple elements wihout creating any extra parent elements like <div> or anything else. (we can create a parent element that will also work)
+
+with React (SPA)                                  without react
+when user interacts
+ react just changes                          when user interacts requestgit 
+/ swaps the  components                       goes to server to load new
+ feels like a                                 page.
+different page
+ is loaded                                             
+                                          
