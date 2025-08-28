@@ -1,0 +1,19 @@
+Hooks In React : 
+there multiple types of hooks in React
+(i) useState ,
+(ii) UseEffeffect
+(iii) useMemo 
+(iV) useCallback etc
+
+useState : (i) It creates a state variable and gives you a function to update it.
+(ii) Whenever the state changes, React re-renders the component with the new value.
+(iii) React updates only the necessary parts of the DOM (not the entire page).
+
+
+We Can Insert Javascript into HTML in component functions as evaluated expressions (Syntax : {}) 
+
+
+
+
+
+
