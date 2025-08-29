@@ -14,9 +14,5 @@
 A react algorithm that decides how and when to update the ui.  before react fibre react use stack-based-reconcilar where the problem was if the rendering started react won't stop it until it gets finished but react fibre overcomes this and it provides controllable rendering where we can , pause assign priority , reuse and abort the work.
 
 
-
-Topics Covered Today : 
-1) Virtual Dom
-2) Reconciliation
-3) React Fibre
-4) props  
+                                                  (D)props (properties)
+through props we can pass data from parent component to child component , this is the similar concept as passing arguments inside functions while calling them                                                  
