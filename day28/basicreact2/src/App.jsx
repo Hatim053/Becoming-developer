@@ -2,19 +2,17 @@ import { useState } from 'react'
 
 
 function App() {
-let[counter , setCounter] = useState(10);
-function add() {
-if(counter < 20) {
-counter = counter + 1;
-setCounter(counter) 
+ let [counter , setCounter] = useState(10);
+ function add() {
+if(counter < 15) {
+ setCounter(++counter);
 }
-}
-function remove() {
-if(counter > 10) {
-counter = counter -1;
-setCounter(counter);
-}
-}
+ }
+ function remove() {
+  if(counter > 10) {
+  setCounter(--counter);
+  }
+ }
   return (
     <>
     <h1>Counter Value : {counter}</h1>

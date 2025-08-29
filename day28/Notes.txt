@@ -16,4 +16,7 @@ We Can Insert Javascript into HTML in component functions as evaluated expressio
 
 
 
-
+Topics Covered : 
+1) can create and render component function inside main.jsx also
+2) insert js in HTML
+3) using useState hook
