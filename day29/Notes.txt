@@ -1,0 +1,22 @@
+                                               (A) Virtual Dom : 
+1) When react components initially render react creates Virtual dom tree that is  a copy of the actual dom 
+2) whenever there is any changes in the component state , props instead of directly implementing it into actual dom it creates a new virtual dom and then compares the new one with the old one .
+3) then it only updates the changed values instead of recreating the the whole dom
+
+
+
+                                               (B) Reconciliation : 
+ algorithm react uses to differentiate previosly contructed virtual dom with the newly constructed virtual dom  from  to determine the changes occurred.
+
+
+                                                  (C) React Fibre (introduce in React 16)
+
+A react algorithm that decides how and when to update the ui.  before react fibre react use stack-based-reconcilar where the problem was if the rendering started react won't stop it until it gets finished but react fibre overcomes this and it provides controllable rendering where we can , pause assign priority , reuse and abort the work.
+
+
+
+Topics Covered Today : 
+1) Virtual Dom
+2) Reconciliation
+3) React Fibre
+4) props  
