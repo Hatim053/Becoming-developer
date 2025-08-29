@@ -8,8 +8,8 @@ function App() {
   
   return (
     <>
-    <Card carName = 'defender' price = '1000000' />
-    <Card carName = 'BMW M4' price = '200000000' />
+    <Card carName = 'Abc' price = '1000000' />
+    <Card carName = 'Xyz' price = '200000000' />
     <Card/>
     </>
   )
