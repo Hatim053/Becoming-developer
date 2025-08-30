@@ -1,0 +1,1 @@
+Batching : there is a concept of Batching in react , whenever there are multiple updates in state react wait until the event , aync callback gets completed then react groups multiple state updates into a single re-render. 
