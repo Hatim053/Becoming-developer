@@ -16,3 +16,13 @@ A react algorithm that decides how and when to update the ui.  before react fibr
 
                                                   (D)props (properties)
 through props we can pass data from parent component to child component , this is the similar concept as passing arguments inside functions while calling them                                                  
+
+
+
+
+
+Topics Covered : 
+1) Virtual Dom ✅
+2) Reconciliation ✅
+3) React Fibre ✅
+4) Prop ✅

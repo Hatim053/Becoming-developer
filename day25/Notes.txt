@@ -11,3 +11,9 @@ return displayName;
 }
 const myFunc = init('Continental Gt 650'); // at this line outer function gets executed and it return's a inner function
 myFunc(); // now outer function returns inner function that we are using here and even after outer function get executed it will remember the varibale 'name' from lexical scope that is what closure is.
+
+
+
+Topics Covered :
+1) Lexical Scope ✅
+2) Closures ✅

@@ -16,3 +16,9 @@ when user interacts
 different page
  is loaded                                             
                                           
+Topics Covered : 
+1) React Defination ✅
+2) React vs ReactDOM vs React-native ✅
+3) fragements ✅
+4) React (SPA) Vs Without React (MPA) ✅
+
