@@ -1,0 +1,6 @@
+useRef -it let's you atttach ref to any  DOM element and we can direclty interact with the element and it stores mutable values unlike useState changing useRef values doesn't triger re-render.
+
+
+
+useEffect - it takes two arguments  fn + dependencies array
+if there are changes in values in the dependencies array then the function inside useEffect will get execute.
