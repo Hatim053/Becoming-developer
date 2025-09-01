@@ -1,0 +1,1 @@
+We can pass state variable function also as an argument to to a component.
