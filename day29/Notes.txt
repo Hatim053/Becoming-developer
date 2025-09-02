@@ -6,7 +6,7 @@
 
 
                                                (B) Reconciliation : 
- algorithm react uses to differentiate previosly contructed virtual dom with the newly constructed virtual dom  from  to determine the changes occurred.
+ algorithm react uses to differentiate previosly contructed virtual dom with the newly constructed virtual dom    to determine the changes occurred.
 
 
                                                   (C) React Fibre (introduce in React 16)
