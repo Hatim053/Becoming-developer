@@ -1,0 +1,9 @@
+Topics Covered : 
+React Router - install
+Link , NavLink
+import Router
+CreatBrowserRouter([{}])
+outlet
+useParams Hook
+customized Router /User/:Id
+ 
