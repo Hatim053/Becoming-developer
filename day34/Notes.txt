@@ -1,0 +1,12 @@
+                        (A) Context Api
+Context Api : it allows to share data globally among components without drilling.
+
+
+                        (B) Redux
+(i) Redux → The state management library.
+(ii) React-Redux → Lets React components talk to Redux.
+(iii) Redux Toolkit (RTK) → Modern, simplified way to write Redux code.
+
+
+                      (C) Prop drilling
+for ex : if a grandChild components needs the data so will pass data from parent component , then it will pass data to child component , then it will pass data finally to grandChild component. so here basically data was needed by grandChild component but all the intermediate component uneccessary hanlded that data making the code complex.                      
