@@ -1,0 +1,15 @@
+Redux : redux is core founationl library for state management
+redux-react : to make redux compataible with react
+redux-toolkit - modern and simplified version of redux
+
+nano-id : generates unique string ID.
+
+reducer : reducer is a function that takes state and action as an arguement and it returns a new state. reducer is used to update / change the state in the redux application. it creates a new object , array  instead of directly modifying the current state because in redux state should be read-only and updates must be immutable.
+
+state : gives the current state / data of the application wihout actions are applied
+action : tells  about the changes to be made
+
+useDispatch : a react hook that is used to upadate the state inside store , it uses reducers to changes values in the store.
+useSelector : in redux data is in the store not in the components so useSelector helps components read the data from store.
+
+store : it is a single object that hold entire application state's. wihout it each components have to manage their states on thier own.(states ko centralized karta he so that it can be used among multiple components) 
