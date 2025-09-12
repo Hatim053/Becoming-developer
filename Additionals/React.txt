@@ -1,0 +1,28 @@
+Topics Covered : 
+1)creating a react app 
+2)function components - structure and file naming
+3)fragements
+4)props
+5)react , react-dom , react-native 
+6)virtual dom , reconciliation , react fibre
+7)context api , 
+8)redux
+9)redux , redux-toolkit , redux-react
+10)reducers , store , state , action , useDispatch , useSelect
+11)react-router-dom
+12)hooks - 
+13)useState , 
+14)useParams, 
+15)useRef,
+16)useEffect,
+17)useCallback,
+18)useMemo,
+19)useContext,
+20)nano id,
+21)useNavigate,
+22)Batching,
+23)=arr?.map(() => {}).
+24) react-hook-form
+25) Tricky Questions : 
+setValue(1) if the value is initial also defined to 1 component won't re-render because value doesn't change
+setValue({}) it will re-render the component every time even if the same object with the same values is passed because it is the non-primitve data where everytime a new object is getting passed

@@ -64,7 +64,7 @@ Throttiling : youtube live slow mode wala example
 
 
 
-// const sendWithThrottle = throttle(sendChat , .01);
+// const sendWithThrottle = throttle(sendChat , 1000);
 // sendWithThrottle('Hello');
-// sendWithThrottle('I Am Yur Subscriber');
-// sendWithThrottle('I Am Yur Subscriber');sendWithThrottle('I Am Yur Subscriber');sendWithThrottle('I Am Yur Subscriber');sendWithThrottle('I Am Yur Subscriber');sendWithThrottle('I Am Yur Subscriber');
+// sendWithThrottle('World');
+// sendWithThrottle('Hello World');
