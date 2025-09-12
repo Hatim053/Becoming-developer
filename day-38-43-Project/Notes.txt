@@ -1,0 +1,50 @@
+useMemo - takes 2 arguments one is fn and second is dependencies array. it memoize the return value of the function so if the values of dependencies array doesn't change it wont't re-compute the values unneccesary on evry re-render.
+
+useCallback - it memoize the function refrence not the value and if the dependencies array values change's then only function refrence will be change it won't change on every re-render.
+
+
+useEffect = 
+useEffect(() => {
+    console.log("Will run On Every Re-Render")
+})
+
+useEffect(() => {
+    console.log('Will Run On First Render Only);
+} , [])
+ useEffect(() => {
+    console.log('Will Run On First Render And Only When Value's In The Dependency Array Will Change')
+ } , [count , color])
+
+
+
+
+ useRef =
+ const buttonRef = useRef(null);
+ useEffect(() => {
+    buttonRef.current.style.color = 'text'; // direct dom manuplation
+     })   
+
+
+     const refValue = useRef(0);
+     useEffect(() => {
+        refValue.current = refValue.current + 1; // it will presist the value after re-render
+     })
+     and let's say if we are updating the refValue on a button click the it won't cause re-render and if the componenet get's re-render due to some aother state update refValue will be presisted.
+
+
+
+
+  useNavigate hook - imports from react-router-dom,
+  const navigate = useNavigate();
+
+  navigate('/home);
+
+  it allows use to programatically redirect to different routes while links and navlinks re-redirect when user clicks on them.
+
+
+  let arr = [];
+  arr?.map(()=>{}) // it check if the array has valid values then only it process further or goes into loop.
+  
+
+  CORS : cross origin resource sharing is a browser feature that restrict request from one domain (fontend) to another (backend) untill we allow it explicitally. 
+  ex : react is running on localhost:3000 and backend on port 5000 then browser will block the fetch request if backend doesn;t allow CORS.
