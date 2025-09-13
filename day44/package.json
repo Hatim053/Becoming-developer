@@ -1,0 +1,19 @@
+{
+  "name": "backend_01",
+  "version": "1.0.0",
+  "description": "basic backend setup for express servers",
+  "keywords": [
+    "backend",
+    "express"
+  ],
+  "license": "ISC",
+  "author": "Hatim Hussain",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "express": "^5.1.0"
+  }
+}

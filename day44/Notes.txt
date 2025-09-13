@@ -1,0 +1,34 @@
+Ports : ports are like a digit gate (exit , entry point) of computers from where the data gets transmitted (Recieved and Shared)
+
+server : server is nothing but a computer or a software system that provides services to another computers called clients. server stores and manages data , files for applications and website , if we are having a computer and we program it in such a way that it can recieve/handle requests and provide response/resources over a network then it can be termed as server.
+
+Express Js : it is node package or framework that is used for creating servers , we even can create servers through node js  also by using it's http package but there we have to manually handle the urls and set headers where as  express simplifies this process. 
+why use express : 
+1) easy routing
+2) clean and simplified code for node servers
+3) middleware support
+
+Types Of Routes : 
+app.get() : Read data
+app.post() : Create data
+app.put() : Update/replace data
+app.patch() : Update/modify part of data
+app.delete() : Delete data
+app.all() : Match all HTTP methods
+
+Npm : (node package manager) a tool that helps you manage , install , update packages and dependencis in your project.
+
+packages : pre-build or pre-returned functions or logic of code that we can directly install and use in our codebase instead of building it at our own.
+
+dependencies : list of packages on which our projects relies.
+
+
+Topics Covered :
+1) file structure of the backend project
+2) ports
+3) server
+4) express , why to use it
+5) types of Routes
+6) Npm
+7) packages
+8) dependencies.
