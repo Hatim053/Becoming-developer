@@ -1,0 +1,14 @@
+Node js is a run-time environment for executing javascript outside browser. before node javascript can only get executed in web browsers , javascript alone can't create server environment but node made it possible.
+
+module and commonjs are basically 2 ways/syntax's to split our code 
+
+module : newer syntax that has been introduce in ES6 , uses import and export syntax and loads and loads modules in aynchronous way.
+common js : older way uses require and export.module syntax and loads modules in synchronous way.
+
+Axios : external library commonly used for Api requests , unlike fecth we don't have to parse data to json manually and fetch only gives errors on network failures for  404 and 500 we have to check manually but this handled in axios.
+
+Topics Covered : 
+1) node js
+2) module vs commonjs and what are they
+3) axios - external package needs to install
+4) hanling CORS with proxies server and cors package 
