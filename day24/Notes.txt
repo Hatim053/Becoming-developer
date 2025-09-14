@@ -1,4 +1,5 @@
-                                   (A) bind();
+
+                                    (A) bind();
 Basically it helps us to parmanently attach the  context of any object to a particular function , no matters where and how many times it is called it will refer to that attached context.    
                                   (B) How call() Is different
  call() attaches the context for the particular function call. as the new object calls it will attach the context of that new object.                                                                                                   
