@@ -1,0 +1,11 @@
+Modules : reusable block of javascript code that we can import and use in different parts of a node application , helps to treduce code duplication.
+1) Built-in-module : provide by node itself (http , fs , etc).
+2) local module : created by us.
+3) third-party module : available in npm.
+
+
+Models : data of the application can be divided/classified into sub-categories like usersData , productData , sellerData this are termed as models.
+Note : In mongoDB : models are pluralized and stored in lowercase.
+
+Schema : defining structure of am individual how it will look like is for ex : what fields will it be containing , are they required , what are there types etc,  termed as schema.
+document : actual data that has been stored followig the schema.
