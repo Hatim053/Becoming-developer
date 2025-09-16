@@ -1,0 +1,11 @@
+fs : built-in module in node js that allows to interact with files , it allows read , update , renaming , copy , delete of the files and directories. it provides both synchronous and asynchronous methods these operations.
+
+Node js architecture : 
+1) client sends request ->
+2) request comes to event queue -> 
+3) events loop continously watch this queue if there is any request -> 
+     (a) if the request if non-blocking then event loop process it 
+     (b) if the request is synchronous /blocking then a thread is assined from thread pool 
+         to handle that request so that it doesn't block the main thread. however by default
+         there are only 4 thread present it can be extended.
+4) thread worker completes the task and returns the response back to event loop and get's free.
