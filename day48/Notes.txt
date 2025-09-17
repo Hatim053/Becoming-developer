@@ -1,0 +1,11 @@
+URL package
+what are URL
+query parameters
+protocol , domain , path
+making a http server using http built-in module
+createrServer(reqlistener function)
+setting up backend project
+url (unifrom resource locator)
+https:// - protcol
+www.google.com - domain (human readable name of the ip address);
+/user - path
