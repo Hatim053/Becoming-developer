@@ -1,0 +1,22 @@
+1) mongoose 
+2) express and why to use it
+3) ports 
+4) servers
+5) dependencies
+6) packages
+7) node js
+8) document , Schema
+9) model , collections
+10) fs module
+11) node architecture
+12) Enum 
+13) modules and types of modules
+14) types of routes 
+15) import and export      
+16) module vs common js  
+17) axios
+18) handling cors with frontend (using proxies) and backend (using cors package)
+19) npm 
+20) file structure
+21) creating a http server
+22) url package and what are url
