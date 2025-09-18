@@ -1,0 +1,15 @@
+4.18.2
+1st part - 4 - major changes / it can break the code
+2nd part - 18 // recommended to update
+3rd part - 2  // minor fixes , optional to update
+
+^4.18.2 - it will only update the changes in 2 and 3 part
+~4.18.3 - it will only update the changes in 3 part
+4.18.3 - it won't update any changes / it is considered as fixed version
+
+Topics Covered : 
+1) connected backendProject with mongo db
+2) https methods
+3) version in node and express
+
+
