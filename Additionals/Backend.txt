@@ -20,3 +20,7 @@
 20) file structure
 21) creating a http server
 22) url package and what are url
+23) restful api and creating them (postman)
+24) csr and ssr
+25) middlewares 
+26) different middlewares - static , cors , json , urlencoded , cookieParser

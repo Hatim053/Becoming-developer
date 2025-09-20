@@ -72,3 +72,5 @@ Throttiling : youtube live slow mode wala example
 
 
 difference between factory functions and constructer functions
+
+shallow copy vs deep copy
