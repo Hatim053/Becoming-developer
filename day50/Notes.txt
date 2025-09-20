@@ -1,0 +1,5 @@
+1) Restful Api : A RESTful API is a way to let applications talk to each other using HTTP methods, stateless communication, and resource-based URLs, usually returning data in JSON
+stateless : Means each requuest from client should contain all neccessary information server won't remember previos requests as seesion data not stored.
+
+SSR (server side rendering) - it is faster as compared to CSR because server renders the full html file and send it to client
+CSR (client side rendering) - here first the data is fetched at the client side and then it get's render , react uses client side rendering. 
