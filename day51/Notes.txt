@@ -7,27 +7,4 @@ next() - to pass the control to the next middleware/route handler
 4) express.urlencoded() : it specifically parses data from html form submissions.
 5) express cookieParser() : parse the cookie data comming from http requests from client(browser) and makes it available as javascript object.
 
- 
-6) Create Restull Api 
 
-
-
-
-also use cors
-
-utils 
-apierros 
-statuscode
-message - super
-error
-stack
-success
-
-
-
-
-apirespinse
-statuscode
-data
-message
-success
