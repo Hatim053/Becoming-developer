@@ -1,0 +1,33 @@
+1) middleware : middleware is like a middleman between request and response cycle where the request comes and middleware decides whether to continue or block the flow. 
+next() - to pass the control to the next middleware/route handler
+
+                                          Some Built-in middlewares : 
+2) express.static() - built in  middleware used to serve static files 
+3) express.json({"limit" : 16kb}) - let automatically parses the req data coming from client into javascript object and we also set limit to prevent large data incoming
+4) express.urlencoded() : it specifically parses data from html form submissions.
+5) express cookieParser() : parse the cookie data comming from http requests from client(browser) and makes it available as javascript object.
+
+ 
+6) Create Restull Api 
+
+
+
+
+also use cors
+
+utils 
+apierros 
+statuscode
+message - super
+error
+stack
+success
+
+
+
+
+apirespinse
+statuscode
+data
+message
+success
