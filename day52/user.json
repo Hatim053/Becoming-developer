@@ -1,0 +1,27 @@
+[
+  {
+    "id": 1,
+    "name": "hatim hussain",
+    "email": "abc@gmail.com"
+  },
+  {
+    "id": 2,
+    "name": "sarah hussain",
+    "email": "xyz@gmail.com"
+  },
+  {
+    "id": 3,
+    "name": "vaishalli",
+    "email": "example@gmail.com"
+  },
+  {
+    "id": 4,
+    "name": "sanjana",
+    "email": "example@gmail.com"
+  },
+  {
+    "id": 5,
+    "name": "kaashvi hiranandani",
+    "email": "example@gmail.com"
+  }
+]

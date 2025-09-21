@@ -1,0 +1,23 @@
+1) headers : they represent the meta-data associated with the API request and response we can also set our custom headers
+
+2) AccessTokens : they are short lived tokens , sent with each request to grant access to the api/service
+
+3) RefreshTokens : long lived tokens used to get a new access token when the old ones expires 
+
+
+
+
+
+
+index : true : jab bhi hume searching me lana h database ke ander to index ko true kardo in short kisi bhi field per searching enable karni to true kardo wihout this also hum searching kar sakte he but ye thoda optimized way h
+
+install package : 
+mongoose aggregate paginate version 2 , import it and use videoSchema,pligin() before export
+bycrpt - auto hash password(encrypt , decrypt) 
+jsonwebtoken
+import bcyrpt and jsonwebtoken
+use bycrpt with userSchema.pre('save', aync function) and also check if password is modified
+password check function
+
+
+env - accestokensecret accestokenexpiry , refreshtokensecret . refreshtokenexpiry
