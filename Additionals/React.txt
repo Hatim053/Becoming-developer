@@ -26,3 +26,22 @@ Topics Covered :
 25) Tricky Questions : 
 setValue(1) if the value is initial also defined to 1 component won't re-render because value doesn't change
 setValue({}) it will re-render the component every time even if the same object with the same values is passed because it is the non-primitve data where everytime a new object is getting passed
+
+
+
+
+coaching topics covered : 
+
+
+1) what is babel : babel is javascript complier that help you to run your react code into all browsers. babel converts modern js (ES6) code and jsx code into broswer understandable js basically older syntax of js.
+
+Note : react element is a javascript object.
+
+2) How does Babel convert HTML code in React into valid code? : babel uses React.createElement() to turn jsx code into js code that react can understand and render
+
+3) what is React.createElement() : it is a function provided by react that babel uses to transform jsx code into react element basically javascript objects.
+
+4) What is the meaning of render and root? : 
+Root : root is the top level dom element where entire react application gets render or mounted , it is basically the entry point of our react application.
+Render : You said:
+render means displaying the component or loading the component on UI.

@@ -24,3 +24,8 @@
 24) csr and ssr
 25) middlewares 
 26) different middlewares - static , cors , json , urlencoded , cookieParser
+27) status codes
+28) accesstoken and refresh token
+29) multer and cloudinary setup
+30) MVC (model , view , controller) in Nodejs
+
