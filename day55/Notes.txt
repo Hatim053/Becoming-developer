@@ -1,0 +1,13 @@
+// steps to register a new user :
+get user details from frontend
+validation of details , check if all the required fields are given or not
+check if user already exist , can check based on any field ex : username , email
+check for images , check for avatar
+upload images to cloudinary and check whether uploaded successfully
+create a user object - create entry in DB
+remove password and refresh token from response
+check for user creation 
+return res
+
+building a url shorterner 
+server side rendering using EJS
