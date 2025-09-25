@@ -1,0 +1,19 @@
+(1) Authentication Patterns : 
+(A) statefull : which maintains or data on server side
+when a user login server creates a session uid and sent's that uid to client
+uid can be transfer through :
+(i) cookies,
+(ii) response,
+(iii) headers
+
+pakcages required :
+npm install uuid - to generate session unique id's
+at the time of logning user generate uid and add sent it to cookies and also make getUser and setUser services
+
+
+
+
+(B) stateless : whihc has no state
+
+
+
