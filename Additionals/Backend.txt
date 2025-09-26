@@ -29,3 +29,4 @@
 29) multer and cloudinary setup
 30) MVC (model , view , controller) in Nodejs
 31) Authentication (statefull vs stateless)
+32) jwt Authentication (stateless) using refresh and access token
