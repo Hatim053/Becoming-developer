@@ -4,6 +4,23 @@ import apiResponses from '../utils/apiResponses.js'
 import multer from "multer"
 import User from '../models/user.model.js'
 import {uploadOnCloudinary} from '../utils/cloudinary.js'
+import { use } from "react"
+
+
+
+const options = {
+    httpOnly : true,
+    secure : true,
+}
+
+const generateAccessAndRefreshToken =  async function(user) {
+const accessToken = user.generateAccessToken()
+const refreshToken = user.generateRefreshToken()
+user.refreshToken = refreshToken
+await user.save({validateBeforeSave : false})
+return {refreshToken , accessToken}
+}
+
 
 const registerUser = ayncHandler(async (req , res) => {
 
@@ -45,14 +62,18 @@ const avatarLocalPath = req.files?.avatar[0]?.path;
     }
     const avatar = await uploadOnCloudinary(avatarLocalPath)
     const coverImage = await uploadOnCloudinary(coverImageLocalPath)
+    if(! coverImage) {
+        throw new apiErrors(400 , 'coverImage file is required')
+    }
     if(! avatar) {
-        throw new apiErrors('400' , 'avatar file is required')
+        throw new apiErrors(400 , 'avatar file is required')
     }
     const user  = await User.create({
         fullName,
         username : username.toLowerCase(),
         email,
-        coverImage : avatar.url,
+        avatar : avatar.url,
+        coverImage : coverImage.url
 
     })
     
@@ -68,4 +89,49 @@ const avatarLocalPath = req.files?.avatar[0]?.path;
     )
 })
 
-export default registerUser
+
+const loginUser = ayncHandler(async(req ,res) => {
+    // get the data from frontend
+    // validate the data
+    // generate refresh and access tokens
+    // send them to client in cookie
+    // save refresh token to user document
+    // send the res
+    // create a route for login
+    // create a route for logout
+    // make a middleware for logout route
+
+
+    const {email , password} = req.body
+    if(!email) {
+        throw new apiErrors(400 , 'email is required')
+    }
+    const user = await User.findOne({email})
+    if(! user) {
+        throw new apiErrors(404 , 'user doesnt exist')
+    }
+    const validatePassword = user.isPasswordCorrect(password)
+    if(! validatePassword) {
+        throw new apiErrors(400 , 'wrong password entered')
+    }
+    
+    const {refreshToken , accessToken} = await generateAccessAndRefreshToken()
+    res.status(200)
+    .cookie('refreshToken' , refreshToken , options)
+    .cookie('accessToken' , accessToken , options)
+
+})
+
+const logoutUser = ayncHandler(async(req , res) => {
+const userId = req.user._id;
+const user = User.findByIdAndUpdate(
+    userId,
+    { $set : {refreshToken : 1}},
+    {new : true}
+)
+return res.status(200)
+.clearCookie('refreshToken' , options)
+.clearCookie('accessToken' , options)
+})
+
+export {registerUser , loginUser , logoutUser}
