@@ -30,3 +30,10 @@
 30) MVC (model , view , controller) in Nodejs
 31) Authentication (statefull vs stateless)
 32) jwt Authentication (stateless) using refresh and access token
+33) authorization
+34) cookies , they are domain specific
+35) Authorization headers for send the tokens
+36) package.json - it is the configuration file in root directory that is returned in JSON format  that contains meta-data about your project like name , version , scripts , dependencies
+when we run npm init it gets created
+
+37) package.lock.json - it contains the extra data about dependencies and sub dependencies like thier versions and more and it provides consistency by locking the version of the dependencies to make sure same versions are installed when used in multiple machines
