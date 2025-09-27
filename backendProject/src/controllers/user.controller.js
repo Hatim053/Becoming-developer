@@ -4,8 +4,7 @@ import apiResponses from '../utils/apiResponses.js'
 import multer from "multer"
 import User from '../models/user.model.js'
 import {uploadOnCloudinary} from '../utils/cloudinary.js'
-import { use } from "react"
-
+import jwt from 'jsonwebtoken'
 
 
 const options = {
@@ -134,4 +133,36 @@ return res.status(200)
 .clearCookie('accessToken' , options)
 })
 
-export {registerUser , loginUser , logoutUser}
+
+const refreshAccessToken = ayncHandler(async(req , res) => {
+    // get the refresh token from frontend
+    // decode the token and get id from it
+    // get the user out of it
+    // generate the access and refresh token
+    // add both the token to cookie and user
+    const incomingRefreshToken = req.cookie.refreshToken
+    if(! incomingRefreshToken) {
+        throw new apiErrors(400 , 'invalid request')
+     }
+    const decodedToken = jwt.verify(incomingRefreshToken , process.env.REFRESHTOKENSECRET)
+    if(! decodedToken) {
+        throw new apiErrors(400 , 'invalid refresh token')
+    }
+    const user = await User.findById({_id : decodedToken._id})
+    if(! user) {
+        throw new apiErrors(404 , 'no user found')
+    }
+    if(user.refreshToken !== incomingRefreshToken) {
+        throw new apiErrors(404 , 'refresh token not matched')
+    }
+
+    const {refreshToken , accessToken} = generateAccessAndRefreshToken()
+    user.refreshToken = refreshToken
+    await user.save({validateBeforeSave : true})
+   return  res.status(200)
+    .cookie('refreshToken' , refreshToken , options)
+    .cookie('accessToken' , accessToken , options)
+})
+
+
+export {registerUser , loginUser , logoutUser , refreshAccessToken}
