@@ -165,4 +165,142 @@ const refreshAccessToken = ayncHandler(async(req , res) => {
 })
 
 
-export {registerUser , loginUser , logoutUser , refreshAccessToken}
+const updateUserPassword = ayncHandler(async (req , res) => {
+// get password from frontend
+// check fields are non-empty
+// validate given password with the previous password using bycrpt
+// get the user
+// change the new password with the prevoius password
+// save the user object
+// remove password field from it 
+// send the res 
+
+const {oldPassword , newPassword} = req.body
+if(!oldPassword && !newPassword) {
+    throw new apiErrors(400 , 'both password fields are required')
+}
+
+const user = await User.findById({_id : req.user?._id})
+
+if(! user) {
+    throw new apiErrors(404 , 'user not found')
+}
+
+const isPasswordCorrect = await user.isPasswordCorrect(oldPassword)
+if(! isPasswordCorrect) {
+    throw new apiErrors(400 , 'old password is different')
+}
+user.password = newPassword
+
+await user.save({validateBeforeSave : true})
+
+return res.status(200).
+json(200 , 'password updated successfully')
+})
+
+
+const getCurrentUser = function(req , res) {
+if(! req.user) {
+    throw new apiErrors(404 , 'user not found')
+}
+return res.status(200)
+.send(
+    new apiResponses({
+        status : 200,
+        data : req.user
+    })
+)
+
+}
+
+const updateUserAvatar = ayncHandler(async (req , res) => {
+// files will be uploaded through multer that will use as a middleware while hitting this route
+const avatarLocalPath = req.file?.path
+
+if(! avatarLocalPath) {
+    throw new apiErrors(400 , 'no file found')
+}
+const avatar = await uploadOnCloudinary(avatarLocalPath)
+
+if(! avatar) {
+    throw new apiErrors(500 , 'uploading on cloundinary failed')
+}
+
+const user = await User.findByIdAndUpdate(
+{_id : req.user._id}, 
+{$set : {avatar : avatar.url}},
+{new : true}
+).select(" -password -refresToken")
+
+return res.status(200)
+.json(
+    {
+        status : 200,
+        user : user
+    }
+)
+
+})
+
+const updateUserCoverImage = ayncHandler(async (req , res) => {
+
+const coverImageLocalPath = req.file?.path
+
+if(! coverImageLocalPath) {
+    throw new apiErrors(400 , 'no file found')
+}
+
+const coverImage = await uploadOnCloudinary(coverImageLocalPath)
+
+if(! coverImage) {
+    throw new apiErrors(500 , 'uploading on cloudinary failed')
+}
+
+const user = await User.findByIdAndUpdate(
+    {_id : req.user._id},
+    {$set : {coverImage : coverImage.url}},
+    {new : true}
+).select("-password -refreshToken")
+
+return res.satus(200)
+.json(
+    {
+        status : 200,
+        user : user
+    }
+)
+
+})
+
+const updateAccountDetails = ayncHandler(async (req , res) => {
+
+    const {fullName , email} = req.body
+    if(! fullName || ! email) {
+        throw new apiErrors(400 , 'both the fieds are required')
+    }
+
+    const user = await User.findByIdAndUpdate(
+        {_id : req.user._id},
+        {$set : {fullName : fullName , email : email}},
+        {new : true}
+    ).select("-password -refreshToken")
+
+    return res.status(200)
+    .json(
+        {
+        status : 200,
+        user : user
+        }
+    )
+
+})
+
+export {registerUser,
+    loginUser,
+    logoutUser,
+    refreshAccessToken,
+    updateAccountDetails,
+    updateUserAvatar,
+    updateUserCoverImage,
+    getCurrentUser,
+    updateUserPassword}
