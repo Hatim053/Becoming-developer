@@ -1,0 +1,3 @@
+Aggregation Pipelines in MongoDb : it's framework that we can use to perform complex and advance computations on documents
+there is a sequence of stages and each stages process some filteration on the data passes that filtered data to next stage. Each stage uses operators like : $match , $lookup , $addFields , $project
+
