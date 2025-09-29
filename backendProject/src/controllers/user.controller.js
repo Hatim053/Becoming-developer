@@ -295,6 +295,17 @@ const updateAccountDetails = ayncHandler(async (req , res) => {
 
 })
 
+
+const getUserChannelProfile = ayncHandler(async (req , res) => {
+    const {username} = req.body;
+    if(! username) {
+        throw new apiErrors(400 , 'username not found')
+    }
+    
+    const channel = await User.
+
+})
+
 export {registerUser,
     loginUser,
     logoutUser,

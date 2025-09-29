@@ -1,0 +1,5 @@
+get current usr
+chnage password
+update account details
+update user avatar
+update user cover image
