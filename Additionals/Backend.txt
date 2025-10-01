@@ -38,3 +38,7 @@ when we run npm init it gets created
 
 37) package.lock.json - it contains the extra data about dependencies and sub dependencies like thier versions and more and it provides consistency by locking the version of the dependencies to make sure same versions are installed when used in multiple machines
 38) aggreagtion pipelines
+39) websockets and socket.io 
+40) uni-deractional and bi-directional connections
+41) server sent events
+42) short polling and long polling
